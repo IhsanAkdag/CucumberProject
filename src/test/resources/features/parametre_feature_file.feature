@@ -9,16 +9,19 @@ Feature: arama_feature
     Then sonuclarda "iphone" oldugunu dogrular
     Then close the application
 
+  @smoke
   Scenario: TC01_google_iphone_arama
     When kullanici "tesla" icin arama yapar
     Then sonuclarda "tesla" oldugunu dogrular
     Then close the application
 
+  @smoke
   Scenario: TC01_google_iphone_arama
     When kullanici "water" icin arama yapar
     Then sonuclarda "water" oldugunu dogrular
     Then close the application
 
+  @smoke
   Scenario: TC01_google_iphone_arama
     When kullanici "tea pot" icin arama yapar
     Then sonuclarda "tea pot" oldugunu dogrular

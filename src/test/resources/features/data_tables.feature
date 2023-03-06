@@ -1,5 +1,7 @@
 @data_tables  #birden fazla tag name koyabilirz
 Feature: data_tables
+
+  @regression
   Scenario: TC01_musteri_giris_testi
     Given kullanici "https://www.bluerentalcars.com/login" gider
     When kullanici emaili ve sifresini girer

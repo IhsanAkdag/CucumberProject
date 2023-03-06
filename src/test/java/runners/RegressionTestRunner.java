@@ -1,9 +1,7 @@
 package runners;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
@@ -14,10 +12,10 @@ import org.junit.runner.RunWith;
                 "rerun:target/failed_scenarios.txt"
         },
         monochrome = true,//raporlarin consoleda okunakli sekilde cikmasi icin
-        features = "@target/failed_scenarios.txt",//.txt dosya path
-        glue = {"stepdefinitions","hooks"},   //stepdefinitions path
+        features = "./src/test/resources/features",//features folder path
+        glue = {"stepdefinitions"},   //stepdefinitions path
+        tags = "@regression",
         dryRun = false
 )
-public class FailedRunner {
-
+public class RegressionTestRunner {
 }
