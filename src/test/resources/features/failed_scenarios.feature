@@ -9,4 +9,5 @@ Feature: hooks_test
   Scenario: TC02_google_tesla_arama
     When kullanici "iphone" icin arama yapar
     Then sonuclarda "bmw" oldugunu dogrular
+    Then ekran goruntusu al
     Then close the application

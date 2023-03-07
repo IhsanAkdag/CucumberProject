@@ -12,13 +12,14 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-reports.html", // html raporlarimizin yeri
                 "json:target/json-reports/cucumber.json", // json raporlarimizin yeri
                 "junit:target/xml-report/cucumber.xml", // junit raporlarimizin yeri
-                "rerun:target/failed_scenarios.txt"  // fail olan senaryolari buraya kaydederiz
+                "rerun:target/failed_scenarios.txt",  // fail olan senaryolari buraya kaydederiz
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome=true, // consolda raporlarin okunakli olmasi icin
 
         features = "./src/test/resources/features",  //features folder path
         glue = {"stepdefinitions","hooks"}, //stepdefinitions path | hook classinida buradan bagliyoruz
-        tags = "@failed_scenario",
+        tags = "@arama_feature",
         dryRun = false
 
 )
